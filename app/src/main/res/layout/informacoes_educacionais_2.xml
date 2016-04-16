@@ -99,7 +99,7 @@
             android:textColor="@color/colorPrimary"
             android:padding="8dp"/>
         <EditText
-            android:layout_width="80dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:inputType="number"

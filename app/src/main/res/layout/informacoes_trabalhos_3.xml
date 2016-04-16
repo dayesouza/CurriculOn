@@ -67,7 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Período de:"
+                android:text="Período:"
                 android:textColor="@color/colorPrimary"
                 android:padding="8dp"/>
             <EditText
@@ -96,6 +96,21 @@
                 android:onClick="trabalho_atual"
                 android:id="@+id/trabalho_atual"/>
         </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição das atividades:"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/atividades_ultima_empresa"/>
 
         <Button
             android:layout_width="wrap_content"

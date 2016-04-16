@@ -46,14 +46,23 @@ public class MainActivity extends AppCompatActivity {
     public void avancaTelaInfoEstudos(View view){
         //Pega os campos e coloca no objeto
         //vai pra próxima tela
+        setContentView(R.layout.informacoes_educacionais_2);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner_formacao);
+        // Cria um ArrayAdapter com o array criado em strings
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.formacao_array, android.R.layout.simple_spinner_item);
+        // Especifica o layout quando a lista for aberta
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Aplica o Adapter no Spinner
+        spinner.setAdapter(adapter);
     }
 
     public void avancaTelaInfoTrabalhos(View view){
-
+        setContentView(R.layout.informacoes_trabalhos_3);
     }
 
     public void avancaTelaObservacoes(View view){
-
+        setContentView(R.layout.informacoes_observacoes_4);
     }
 
     public void avancaTelaEscolheLayout(View view) {
