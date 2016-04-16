@@ -41,8 +41,20 @@ public class MainActivity extends AppCompatActivity {
         criaSpinner(R.id.spinner_UF, R.array.uf_array);
     }
 
+    /**
+     * Gera o pdf
+     * @param view
+     */
+    public void gerarPDF(View view){
+        GeneratorPDF pdf = new GeneratorPDF();
+        pdf.criar();
+
+        setContentView(R.layout.sucesso);
+    }
+
     public void avancaTelaInfoEstudos(View view){
-        //Pega os campos e coloca no objeto
+        //Pega os campos e coloca nos valores
+
         //vai pra próxima tela
         setContentView(R.layout.informacoes_educacionais_2);
         //Coloca o conteúdo no spinner
@@ -136,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
         cont_instrucao.setBackgroundColor(getResources().getColor(R.color.colorAccent));
 
         if (view_instrucao == 5){
+            //Se a view for 5, acabaram as instruçoes e sera disponibilizado um botao para ir para a tela de edição
             Button botao_start = (Button) findViewById(R.id.botao_comecar);
             botao_start.setVisibility(View.VISIBLE);
             botao_start.setOnClickListener(new View.OnClickListener() {
@@ -145,10 +158,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             LinearLayout linear = (LinearLayout) findViewById(R.id.layout_intrucao);
+            //Tira o onclick do layout inteiro
             linear.setOnClickListener(null);
         }
 
         view_instrucao++;
-//        LinearLayout linear
     }
 }

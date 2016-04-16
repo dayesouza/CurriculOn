@@ -73,7 +73,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_cnh"/>
-
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:layout_gravity="end"
+        android:onClick="gerarPDF"/>
 </LinearLayout>
 </ScrollView>
