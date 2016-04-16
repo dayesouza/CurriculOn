@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experiências"
+            android:id="@+id/text_info"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Última experiência"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empresa:"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:inputType="text"
+                android:id="@+id/ultima_empresa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Função:"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:inputType="text"
+                android:id="@+id/funcao_ultima_empresa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Período de:"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:inputType="date"
+                android:id="@+id/inicio_ultima_empresa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a "
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:onClick=""
+                android:inputType="date"
+                android:id="@+id/fim_ultima_empresa"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atual"
+                android:onClick="trabalho_atual"
+                android:id="@+id/trabalho_atual"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add + experiências"
+            android:padding="8dp"
+            android:onClick="addMaisExp"
+            android:id="@+id/add_mais_exp"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Experiências"-->
+        <!--android:id="@+id/text_info"-->
+        <!--android:textColor="@color/colorPrimaryText"-->
+        <!--android:textSize="15sp"-->
+        <!--android:padding="8dp"-->
+        <!--android:textStyle="bold"/>-->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="right"
+            android:layout_margin="18dp"
+            android:text="@string/proxima_tela"
+            android:onClick="avancaTelaObservacoes"
+            android:id="@+id/button" />
+    </LinearLayout>
+</ScrollView>
+
+    

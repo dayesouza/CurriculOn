@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CurriculOn</string>
+    <string name="action_settings">Settings</string>
+    <string name="proxima_tela">Próximo</string>
+
+    <!-- Array de UF do Brasil para o spinner-->
+    <string-array name="uf_array">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PR</item>
+        <item>PB</item>
+        <item>PA</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="formacao_array">
+        <item>Ensino Fundamental</item>
+        <item>Ensino Médio</item>
+        <item>Ensino Superior</item>
+        <item>Mestrado</item>
+        <item>Doutorado</item>
+    </string-array>
+
+</resources>

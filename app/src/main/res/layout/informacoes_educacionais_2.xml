@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informações Educacionais"
+        android:id="@+id/text_info"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formação:"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/label_nome"
+            android:layout_below="@+id/text_info"
+            android:padding="8dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_formacao"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instituição:"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:inputType="text"
+            android:id="@+id/instituicao_formacao"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso:"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:inputType="text"
+            android:id="@+id/curso"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localização:"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:inputType="text"
+            android:hint="Ex: Curitiba, Pr"
+            android:id="@+id/instituicao_localizacao"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano de conclusão:"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:inputType="number"
+            android:id="@+id/ano_conclusao_formacao"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="18dp"
+            android:text="Cursando"
+            android:id="@+id/cursando"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idiomas"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:onClick="adicionarIdiomas"
+            android:text="Adicionar +"
+            android:id="@+id/botao_add_idiomas"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demais cursos"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:padding="8dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:onClick="adicionarCursos"
+            android:text="Adicionar +"
+            android:id="@+id/botao_add_cursos"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_gravity="right"
+        android:layout_margin="18dp"
+        android:text="@string/proxima_tela"
+        android:onClick="avancaTelaInfoTrabalhos"/>
+
+</LinearLayout>
+    </ScrollView>
