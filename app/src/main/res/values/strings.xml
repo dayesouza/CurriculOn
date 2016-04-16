@@ -42,4 +42,14 @@
         <item>Doutorado</item>
     </string-array>
 
+    <string-array name="cnh_array">
+        <item>Não</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+
 </resources>

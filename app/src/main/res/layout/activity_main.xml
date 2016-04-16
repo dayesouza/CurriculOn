@@ -49,7 +49,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorPrimaryDark"
         android:padding="8dp"
-        android:onClick="editar"
+        android:onClick="tela_instrucao"
         android:id="@+id/gerenciar"
         android:layout_marginTop="15dp"
         android:textColor="@color/colorTextIcons" />
