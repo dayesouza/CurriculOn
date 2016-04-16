@@ -125,13 +125,12 @@
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:padding="8dp"/>
-        <Button
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="38dp"
             android:layout_marginLeft="8dp"
             android:padding="8dp"
             android:onClick="adicionarIdiomas"
-            android:text="Adicionar +"
             android:id="@+id/botao_add_idiomas"/>
     </LinearLayout>
 
@@ -146,13 +145,12 @@
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"
             android:padding="8dp"/>
-        <Button
-            android:layout_width="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="38dp"
             android:layout_marginLeft="8dp"
             android:padding="8dp"
             android:onClick="adicionarCursos"
-            android:text="Adicionar +"
             android:id="@+id/botao_add_cursos"/>
     </LinearLayout>
     <Button

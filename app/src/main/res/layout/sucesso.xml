@@ -31,5 +31,4 @@
         android:text="Enviar E-mail"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/msg_comp"/>
-
 </RelativeLayout>
